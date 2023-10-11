@@ -1,0 +1,387 @@
+@import 'responsive.css';
+
+@media (max-width: 768px) {
+    
+    .home .header .navbar .logo {
+        padding: 15px;    
+        width: 180px;
+        position: absolute;
+        top: 130px;
+    }
+    .home .header .navbar ul li {
+        padding: 15px;
+    }
+    .home .header .navbar ul li a {
+        font-size: .8rem;
+    }
+    .home .banner {
+        margin-top: -35px;
+        margin-left: -380px;
+    }
+    .home .banner h1 {
+        font-size: 4rem;
+        font-weight: 500;
+    }
+    .home .banner .slogan1 {
+        letter-spacing: 2px;
+    }
+
+    .about {
+        border: 3px solid olivedrab;
+    }
+    .about .timing {       
+        width: 20%;
+        padding: 15px;
+    }
+    .about .timing .overlay {    
+        text-align: center;
+        justify-content: end;
+        padding: 20px 10px;
+        margin: auto;
+    }
+    .about .timing .icon-cut {
+        width: 40px;
+        margin: 10px auto;
+    }
+    .about .timing h3 {
+        font-size: 20px;
+        margin: 0 auto 13px auto;
+    }
+    .about .timing .text h4 {
+        font-size: 13px;
+        margin-bottom: 15px;
+    }
+    .about .timing span {
+        font-size: 12px;
+    }
+    .about .timing .text:after {
+        font-size: 20px;
+        margin-top: 5px;
+    }
+    .about .timing img {
+        width: 20px;
+        margin-bottom: 10px;
+    }
+
+    .about .experience {
+        width: 40%;
+        margin-left: 3%;
+        margin-top: 40px;
+        position: relative;
+    }
+    .about .experience span {
+        font-size: 16px;    
+        margin-bottom: 12px;
+    }
+    .about .experience h2 {
+        font-size: 36px;
+    }
+    .about .experience .text {
+        width: 100%;
+    }
+    .about .experience .text p {
+        font-size: 13px;
+        letter-spacing: 1.5px;    
+    }
+    .about .experience .text img {
+        position: absolute;
+        right: 50px;
+        bottom: -30px;
+        width: 180px;
+        height: auto;
+        transform: rotate(90deg);
+    }
+
+    .services {
+        padding: 20px 0;
+    }
+    .services .services-img {
+        width: 100px;
+        display: none;
+    }
+    .services h2 {
+        font-size: 1.4rem;
+        font-weight: bold;
+        padding: 10px;
+        width: 67%;
+    }
+    .services .boxes {
+        flex-wrap: wrap;
+        flex-direction: column;
+        margin-top: 10px;
+        width: 65%;
+        gap: 1rem;
+    }
+    .services .boxes .box {
+        padding: 20px 10px;
+        width: 60%; 
+        height: 400px;
+        margin: 0 auto;
+    }
+
+    .appointment {
+        background-size: 200px;
+        padding: 30px 0;
+        position: relative;
+    }
+    .appointment h2 {
+        font-size: 1.4rem;
+        font-weight: bold;
+        padding: 10px;
+        width: 67%;
+    }
+    .appointment form {
+        width: 65%;
+        height: 450px;
+        padding: 1.5rem;
+        display: flex;
+        gap: 1rem;
+    
+    }
+    .appointment .personal-data {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        padding: .5rem 0 2rem;
+    }
+    .appointment .personal-data .input-wrapper {
+        padding: 1rem 3rem;
+        width: 60%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+    .appointment .input-textarea {
+        position: absolute;
+        bottom: 40px;
+        left: 30px;
+        width: 65%;
+    }
+    .appointment button {
+        position: absolute;
+        top: 45%;
+        right: 35px;
+    } 
+
+
+    .gallery {
+        padding: 20px 0;
+    }
+    .gallery h2 {
+        font-size: 20px;
+    }
+    .gallery .gallery-wrapper {
+        width: 65%;
+        margin: 0;
+    }
+}
+
+
+
+
+@media (min-width: 280px) and (max-width: 380px) {
+    .home .header .menu {
+        display: block;
+    }
+
+    .home .header .navbar {
+        display: none;
+    }
+
+    .header {
+        width: 100%;
+        position: relative;
+    }
+    .home {
+        background-position: 0% 20%;
+        background-size: contain;
+    }
+    .home .header .navbar .logo {
+        padding: 15px;    
+        width: 30px;
+        position: absolute;
+        top: 200px;
+        left: 0px;
+        display: block;
+        z-index: 12;
+    }
+
+    .home .header .navbar ul li {
+        padding: 15px;
+    }
+    .home .header .navbar ul li a {
+        font-size: .8rem;
+    }
+    .home .banner {        
+        margin-top: -35px;
+        margin-left: -385px;
+    }
+    .home .banner h1 {
+        font-size: 2.2rem;
+        font-weight: 500;
+    }
+    .home .banner .slogan1 {
+        letter-spacing: 1px;
+        font-size: .9rem;
+        margin-bottom: 1rem;
+    }
+    .home .banner .slogan2 {
+        font-size: .7rem;
+    }
+
+    /*  About  */
+
+    .about .container {
+        flex-direction: column;   
+       
+    }
+    .about .timing {        
+        width: 100%;
+        padding: 8px;
+        top: -50px; 
+        left: 0px;
+    }
+
+    .about .experience {
+        width: 90%;
+        margin-left: 1%;
+        margin-top: 10px;
+    }
+    .about .experience h2 {
+        font-size: 22px;
+        font-weight: 400;
+        margin-top: 1rem;
+    }
+    .about .experience .text {
+        flex-direction: column;
+        max-width: 100%;
+        padding: .5rem .6rem;
+        text-align: center;
+        text-indent: 35px;
+        line-height: 1; 
+    }
+    
+    .about .experience .text p {
+        font-size: 12px;
+        margin-bottom: 10px;
+        letter-spacing: 1px;    
+    }
+    .about .experience .text .brush-about {
+        display: none;      
+    }
+
+     /*  Services  */
+    .services {
+        padding: 50px 0;
+    }
+    .services h2 {
+        font-size: 30px;
+        padding: 10px;
+    }
+    .services .boxes {
+        width: 100%;
+    }
+    .services .boxes .box {
+        width: 90%;
+        margin: auto;
+        padding: 10px 7px;
+        height: 320px;
+    }
+    .services .boxes .box .resp-size {
+        width: 40px;
+    }
+    .services .boxes h4 {
+        font-size: 14px;
+        margin-top: 10px;
+    }
+    .services .boxes .box p {
+        font-size: 13px;
+        margin-top: 10px;
+        line-height: 1.5;
+    }
+
+     /*  Appointment  */
+
+    .appointment {
+        padding: 20px 0;
+        background-position: right bottom;
+        background-size: 150px;
+    }
+    .appointment h2 {
+        font-size: 1.2rem;  
+        width: 100%;
+    }
+    .appointment img {
+        width: 90px;
+    }
+    .appointment form {
+        border: 2px solid orange;
+        width: 100%;
+        padding: 5px;
+    }
+    .appointment .personal-data {
+        margin-bottom: 10px;
+        border: 2px solid orangered;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .appointment .input-wrapper {
+        width: 100%;
+        margin-right: 10px;
+        display: flex;
+        gap: 1rem;
+        flex-direction: column;
+        padding: 5px 12px;
+        border: 2px solid blueviolet;
+    }
+
+    /*  Gallery  */
+
+    .gallery {
+        padding: 20px 0;
+    }
+    .gallery h2 {
+        font-size: 20px;
+    }
+    .gallery .gallery-wrapper {
+        width: 100%;
+        margin: 10px auto;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        height: 160vh;
+        overflow-block: auto;
+    }
+    .gallery .gallery-wrapper > div{
+        max-width: 230px;
+        width: 100%;
+        height: 130px;
+    }
+
+    /*  Location */
+
+    .location {
+        padding: 10px;
+    }
+    .location .head {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .location .info {
+        justify-content: flex-start;
+    }
+    .location .info .text span {
+        font-size: .8rem;
+    }
+
+    .footer {
+        padding: 15px;
+    }
+
+
+}
