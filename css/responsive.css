@@ -319,26 +319,72 @@
         width: 90px;
     }
     .appointment form {
-        border: 2px solid orange;
         width: 100%;
         padding: 5px;
     }
-    .appointment .personal-data {
+    .appointment .formulario {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+    }
+    .appointment .formulario .input-box {
+        display: flex;
+        flex-direction: column;
+        margin: 6px 14px 7px;
+        font-size: 1rem;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    .appointment .formulario .input-box select {
+        width: 90%;
+        padding: .5rem;
+        font-size: 1rem;
+        border: none;
+        outline: none;
+        margin-top: 6px;
+        border-radius: 5px;
+        background-color: #eeeeeeaa;
+    }
+    .appointment .formulario .input-box textarea {
+        border: none;
+        outline: none;
+        resize: none;
+        margin-top: 6px;
+        width: 90%;
+        border-radius: 5px;
+        background-color: #eeeeeeaa;
+        padding: .8rem 1rem;
+    }
+    .appointment .formulario .input-box input {
+        width: 90%;
+        padding: .4rem .6rem;
+        font-size: 1rem;
+        border: none;
+        outline: none;
+        margin-top: 4px;
+        border-radius: 5px;
+        background-color: #eeeeeeaa;
+    }
+
+
+    /* .appointment .personal-data {
         margin-bottom: 10px;
         border: 2px solid orangered;
         width: 100%;
         margin: 0;
         padding: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 1.2rem;
     }
-    .appointment .input-wrapper {
+    .personal-data .input-wrapper {
         width: 100%;
         margin-right: 10px;
         display: flex;
-        gap: 1rem;
         flex-direction: column;
-        padding: 5px 12px;
+        
         border: 2px solid blueviolet;
-    }
+    } */
 
     /*  Gallery  */
 

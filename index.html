@@ -157,36 +157,35 @@
             <h2>Faça um gendamento</h2>
             <img src="image/heading-ic-white.png"  alt="faça um agendamento">
 
-            <form>
+            <form class="formulario" action="#">
+                <label for="name" class="input-box label-name">
+                    Nome:
+                    <input type="text" placeholder="Nome">
+                </label>
 
-                <div class="personal-data">
-                    <div class="input-wrapper">
-                        <label>Nome</label>
-                        <input type="text" placeholder="Digite seu nome">
-                    </div>
-                    <div class="input-wrapper">
-                        <label>E-mail</label>
-                        <input type="emial" placeholder="Digite seu E-mail">
-                    </div>
-                    <div class="input-wrapper">
-                        <label>Telefone</label>
-                        <input type="tel" placeholder="Digite seu Telefone">
-                    </div>
-                    <div class="input-wrapper">
-                        <label>Tipo de serviço</label>
-                        <select>                   
-                            <option>Cortar Cabelo</option>
-                            <option>Cortar Cabelo/Barba</option>
-                        </select>
-                    </div>
-                </div>
+                <label for="email" class="input-box label-email">
+                    E-mail:
+                    <input type="email" placeholder="Email">
+                </label>
 
-                <div class="input-wrapper input-textarea">
-                    <label for=""></label>
-                    <textarea></textarea>
-                </div>
-                <button>ENVIAR</button>
+                <label for="phone" class="input-box label-phone">
+                    Telefone:
+                    <input type="Number" placeholder="Telefone">
+                </label>
 
+                <label for="services" class="input-box label-phone">
+                    <span>Tipo de Sevicos</span>
+                    <select name="" id="services">
+                        <option value="cabelo">Cabelo</option>
+                        <option value="cabelo e barba">Cabelo e Barba</option>
+                        <option value="barba">Barba</option>
+                    </select>
+                </label>
+
+                <label for="textarea" class="input-box label-phone">
+                    Algum assunto?
+                    <textarea name="" id="textarea" cols="30" rows="10"></textarea>
+                </label>
             </form>
             
         </div>
