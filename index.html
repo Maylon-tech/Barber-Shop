@@ -158,34 +158,38 @@
             <img src="image/heading-ic-white.png"  alt="faça um agendamento">
 
             <form class="formulario" action="#">
-                <label for="name" class="input-box label-name">
-                    Nome:
-                    <input type="text" placeholder="Nome">
-                </label>
+                <div class="left-input-container">
+                    <label for="name" class="input-box label-name">
+                        <span>Nome:</span>
+                        <input type="text" placeholder="Nome">
+                    </label>
+    
+                    <label for="email" class="input-box label-email">
+                        E-mail:
+                        <input type="email" placeholder="Email">
+                    </label>
+    
+                    <label for="phone" class="input-box label-phone">
+                        Telefone:
+                        <input type="Number" placeholder="Telefone">
+                    </label>
+                </div>
 
-                <label for="email" class="input-box label-email">
-                    E-mail:
-                    <input type="email" placeholder="Email">
-                </label>
-
-                <label for="phone" class="input-box label-phone">
-                    Telefone:
-                    <input type="Number" placeholder="Telefone">
-                </label>
-
-                <label for="services" class="input-box label-phone">
-                    <span>Tipo de Sevicos</span>
-                    <select name="" id="services">
-                        <option value="cabelo">Cabelo</option>
-                        <option value="cabelo e barba">Cabelo e Barba</option>
-                        <option value="barba">Barba</option>
-                    </select>
-                </label>
-
-                <label for="textarea" class="input-box label-phone">
-                    Algum assunto?
-                    <textarea name="" id="textarea" cols="30" rows="10"></textarea>
-                </label>
+                <div class="right-input-container">
+                    <label for="services" class="input-box label-phone">
+                        <span>Tipo de Sevicos</span>
+                        <select name="" id="services">
+                            <option value="cabelo">Cabelo</option>
+                            <option value="cabelo e barba">Cabelo e Barba</option>
+                            <option value="barba">Barba</option>
+                        </select>
+                    </label>
+    
+                    <label for="textarea" class="input-box label-phone">
+                        Algum assunto?
+                        <textarea name="" id="textarea" cols="30" rows="10"></textarea>
+                    </label>
+                </div>
             </form>
             
         </div>
