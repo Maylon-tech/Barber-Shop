@@ -26,11 +26,8 @@
         letter-spacing: 2px;
     }
 
-    .about {
-        border: 3px solid olivedrab;
-    }
     .about .timing {       
-        width: 20%;
+        width: 40%;
         padding: 15px;
     }
     .about .timing .overlay {    
@@ -40,15 +37,15 @@
         margin: auto;
     }
     .about .timing .icon-cut {
-        width: 40px;
+        width: 20px;
         margin: 10px auto;
     }
     .about .timing h3 {
-        font-size: 20px;
+        font-size: 17px;
         margin: 0 auto 13px auto;
     }
     .about .timing .text h4 {
-        font-size: 13px;
+        font-size: 12px;
         margin-bottom: 15px;
     }
     .about .timing span {
@@ -64,7 +61,7 @@
     }
 
     .about .experience {
-        width: 40%;
+        width: 60%;
         margin-left: 3%;
         margin-top: 40px;
         position: relative;
@@ -74,20 +71,20 @@
         margin-bottom: 12px;
     }
     .about .experience h2 {
-        font-size: 36px;
+        font-size: 32px;
     }
     .about .experience .text {
         width: 100%;
     }
     .about .experience .text p {
-        font-size: 13px;
-        letter-spacing: 1.5px;    
+        font-size: 12px;
+        letter-spacing: 1px;    
     }
     .about .experience .text img {
         position: absolute;
-        right: 50px;
-        bottom: -30px;
-        width: 180px;
+        right: 150px;
+        bottom: -15px;
+        width: 150px;
         height: auto;
         transform: rotate(90deg);
     }
@@ -100,35 +97,51 @@
         display: none;
     }
     .services h2 {
-        font-size: 1.4rem;
-        font-weight: bold;
+        font-size: 1.8rem;
+        font-weight: 600;
         padding: 10px;
-        width: 67%;
+        text-align: center;
+        width: 97%;
     }
     .services .boxes {
         flex-wrap: wrap;
         flex-direction: column;
-        margin-top: 10px;
+        margin: 10px auto;
         width: 65%;
         gap: 1rem;
     }
     .services .boxes .box {
         padding: 20px 10px;
         width: 60%; 
-        height: 400px;
+        height: 350px;
         margin: 0 auto;
     }
+    .services .boxes .box p {
+        font-size: 15px;
+        margin-top: 10px;
+        line-height: 1.5;
+    }
+
 
     .appointment {
+        height: 80vh;
         background-size: 200px;
         padding: 30px 0;
         position: relative;
     }
+    .appointment .formulario {
+        width: 95%;
+    }
+    .formulario .right-input-container .input-box textarea {
+        width: 100%;
+    }
+
     .appointment h2 {
-        font-size: 1.4rem;
-        font-weight: bold;
+        font-size: 1.8rem;
+        font-weight: 600;
         padding: 10px;
-        width: 67%;
+        width: 100%;
+        text-align: center;
     }
     .appointment form {
         width: 65%;
@@ -155,6 +168,14 @@
         align-items: center;
         gap: 1rem;
     }
+
+    .appointment .formulario .input-box {     
+        margin-top: 2rem;
+        background-color: rgba(0, 0, 0, 0.2);
+        padding: .8rem;
+        border-radius: 4px;
+    }
+
     .appointment .input-textarea {
         position: absolute;
         bottom: 40px;
@@ -167,20 +188,32 @@
         right: 35px;
     } 
 
-
     .gallery {
         padding: 20px 0;
+        height: 150vh;
+    }
+    .gallery .container {
+        height: 100%;
     }
     .gallery h2 {
-        font-size: 20px;
+        font-size: 30px;
     }
     .gallery .gallery-wrapper {
-        width: 65%;
-        margin: 0;
+        flex-direction: row;
+        margin: .5rem auto;
+        height: 100%;
+        padding: .6rem;
+        gap: .5rem;
+    }
+    .gallery .gallery-wrapper > div {
+        width: 300px;
+        margin: 0 auto;
+        height: 250px;
+    }
+    .gallery .gallery-wrapper img {
+        object-fit: cover;
     }
 }
-
-
 
 
 @media (min-width: 280px) and (max-width: 380px) {
@@ -307,6 +340,7 @@
      /*  Appointment  */
 
     .appointment {
+        height: 120vh;
         padding: 20px 0;
         background-position: right bottom;
         background-size: 150px;
@@ -323,9 +357,15 @@
         padding: 5px;
     }
     .appointment .formulario {
-        display: flex;
-        flex-direction: column;
+        grid-template-columns: 1fr;
         margin-top: 20px;
+        width: 100%;
+    }
+    .appointment .formulario .right-input-container,
+    .appointment .formulario .left-input-container {
+        width: 100%;
+        padding: 0;
+        margin: 0;
     }
     .appointment .formulario .input-box {
         display: flex;
@@ -334,6 +374,7 @@
         font-size: 1rem;
         font-weight: bold;
         text-transform: uppercase;
+        width: 95%;
     }
     .appointment .formulario .input-box select {
         width: 90%;

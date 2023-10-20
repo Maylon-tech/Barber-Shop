@@ -261,7 +261,7 @@ body {
 
 .appointment {
     background-color: var(--color-primary);
-    height: 160vh;
+    height: 100vh;
     padding: 100px 0;
     background-image: url(../image/chair-ic.png);
     background-position: right bottom;
@@ -310,6 +310,9 @@ body {
     border-bottom: 3px solid #eee;
     margin: 1rem 0;
     background-color: transparent;
+}
+.formulario .right-input-container .input-box select option {
+    background-color: #917758;
 }
 .appointment .formulario .right-input-container .input-box textarea {
     border: none;
