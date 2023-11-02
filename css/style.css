@@ -336,6 +336,7 @@ body {
     outline: none;
     margin-top: .6rem;
     background: transparent;
+    color: white;
 }
 .appointment .formulario .input-box input::placeholder {
     color: #fff;

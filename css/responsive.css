@@ -1,5 +1,6 @@
 @import 'responsive.css';
 
+/* Desktops  --  LapTops  */
 @media (max-width: 768px) {
     
     .home .header .navbar .logo {
@@ -215,7 +216,12 @@
     }
 }
 
+/*  SmartPhone  -  Tablets  -  Ipads  */
+@media (min-width: 381px) and (max-width: 767px) {
 
+}
+
+/* SmartPhone  &  Iphone   */
 @media (min-width: 280px) and (max-width: 380px) {
     .home .header .menu {
         display: block;
@@ -383,7 +389,6 @@
         border: none;
         outline: none;
         margin-top: 6px;
-        border-radius: 5px;
         background-color: #eeeeeeaa;
     }
     .appointment .formulario .input-box textarea {
@@ -403,8 +408,7 @@
         border: none;
         outline: none;
         margin-top: 4px;
-        border-radius: 5px;
-        background-color: #eeeeeeaa;
+        border-bottom: 2px solid lightgray;
     }
 
 
