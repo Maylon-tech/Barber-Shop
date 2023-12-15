@@ -435,6 +435,7 @@
 
     .gallery {
         padding: 20px 0;
+        overflow: hidden;
     }
     .gallery h2 {
         font-size: 20px;
@@ -446,7 +447,6 @@
         align-items: center;
         justify-content: center;
         height: 160vh;
-        overflow-block: auto;
     }
     .gallery .gallery-wrapper > div{
         max-width: 230px;
