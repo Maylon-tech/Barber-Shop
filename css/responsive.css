@@ -256,20 +256,20 @@
         font-size: .8rem;
     }
     .home .banner {        
-        margin-top: -35px;
+        margin-top: -15px;
         margin-left: -385px;
     }
     .home .banner h1 {
-        font-size: 2.2rem;
+        font-size: 1.5rem;
         font-weight: 500;
     }
     .home .banner .slogan1 {
         letter-spacing: 1px;
-        font-size: .9rem;
+        font-size: .7rem;
         margin-bottom: 1rem;
     }
     .home .banner .slogan2 {
-        font-size: .7rem;
+        font-size: .8rem;
     }
 
     /*  About  */
@@ -382,24 +382,36 @@
         text-transform: uppercase;
         width: 95%;
     }
+    .appointment .formulario .input-box::placeholder {
+        color: #777777cc;
+        font-size: .7rem;
+    }
+    .appointment .formulario .input-box:focus ::placeholder {
+        opacity: 0;
+    }
+
     .appointment .formulario .input-box select {
         width: 90%;
         padding: .5rem;
-        font-size: 1rem;
+        font-size: .8rem;
         border: none;
         outline: none;
         margin-top: 6px;
         background-color: #eeeeeeaa;
+    }
+    .appointment .formulario .right-input-container .select-title,
+    .appointment .formulario .right-input-container .textarea-title {
+        font-size: .9rem;
     }
     .appointment .formulario .input-box textarea {
         border: none;
         outline: none;
         resize: none;
         margin-top: 6px;
-        width: 90%;
+        width: 100%;
         border-radius: 5px;
         background-color: #eeeeeeaa;
-        padding: .8rem 1rem;
+        padding: .8rem .4rem;
     }
     .appointment .formulario .input-box input {
         width: 90%;
