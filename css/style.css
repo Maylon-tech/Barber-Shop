@@ -1,6 +1,7 @@
 :root {
     --color-primary: #917758;
     --color-secondary: #3c2915;
+    --color-secondary-2: #50371cb9;
     --color-primary-light: #f5eee6;
     --color-dark-light: #191919;
 }
@@ -283,8 +284,9 @@ body {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 1rem;
-    background-color: #a38f78aa;
+    background-color: var(--color-secondary-2);
     width: 80%;
+    border-radius: 10px;
     margin: 0 auto;
     padding: 1rem;
 }
@@ -310,6 +312,7 @@ body {
     border-bottom: 3px solid #eee;
     margin: 1rem 0;
     background-color: transparent;
+    text-align: center;
 }
 .formulario .right-input-container .input-box select option {
     background-color: #917758;
@@ -337,6 +340,10 @@ body {
     margin-top: .6rem;
     background: transparent;
     color: white;
+}
+.left-input-container .input-box input::placeholder {
+    color: #eeeeeecc;
+    font-size: 1rem;
 }
 .appointment .formulario .input-box input::placeholder {
     color: #fff;
@@ -450,8 +457,10 @@ body {
 .location .map iframe {
     width: 100%;
 }
+
+
 .footer {
-    padding: 40px;
+    padding: 20px;
     text-align: center;
     background-color: #191919;
     color: white;

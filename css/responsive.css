@@ -146,7 +146,7 @@
     }
     .appointment form {
         width: 65%;
-        height: 450px;
+        height: 350px;
         padding: 1.5rem;
         display: flex;
         gap: 1rem;
@@ -177,12 +177,10 @@
         border-radius: 4px;
     }
 
-    .appointment .input-textarea {
-        position: absolute;
-        bottom: 40px;
-        left: 30px;
-        width: 65%;
+    .appointment .formulario .right-input-container .input-box textarea {
+        height: 100px;
     }
+
     .appointment button {
         position: absolute;
         top: 45%;
@@ -202,17 +200,35 @@
     .gallery .gallery-wrapper {
         flex-direction: row;
         margin: .5rem auto;
-        height: 100%;
         padding: .6rem;
         gap: .5rem;
+        height: 125vh;
     }
     .gallery .gallery-wrapper > div {
         width: 300px;
         margin: 0 auto;
         height: 250px;
+        overflow: hidden;
     }
     .gallery .gallery-wrapper img {
         object-fit: cover;
+    }
+
+    .location .head {
+        flex-wrap: wrap;
+        gap: 2rem;
+        align-items: center;
+    }
+    .location .info {
+        flex-direction: column;
+        width: 200px;
+    }
+    .location .icon {
+        margin-bottom: 1rem;
+    }
+    .location .text > span {
+        font-size: 1rem;
+        text-align: center;
     }
 }
 
@@ -361,6 +377,7 @@
     .appointment form {
         width: 100%;
         padding: 5px;
+        height: 80%;
     }
     .appointment .formulario {
         grid-template-columns: 1fr;
