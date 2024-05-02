@@ -454,10 +454,18 @@ body {
     height: 50px;
     margin-right: 15px;
 }
+.location .info .text {
+    padding: .7rem;
+}
+.location .info .text span:first-child {
+    font-weight: 700;
+}
+.location .info .text span:last-child {
+    font-size: .9rem;
+}
 .location .map iframe {
     width: 100%;
 }
-
 
 .footer {
     padding: 20px;
